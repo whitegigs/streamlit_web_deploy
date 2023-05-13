@@ -1,6 +1,6 @@
 import requests
 import pandas as pd
-# from bs4 import BeautifulSoup as bs
+from bs4 import BeautifulSoup as bs
 import streamlit as st
 
 
@@ -21,9 +21,9 @@ for i in range(1,30,10):
     url = f'https://search.naver.com/search.naver?where=news&sm=tab_jum&query=부산관광+{keyword}&start={i}' 
     re = requests.get(url)
     html = re.text
+    soup = bs(html,'html.parser')
 
-
-    news = html.select('.news_tit')
+    news = soup.select('.news_tit')
 
     for i in news:
         title = i.text

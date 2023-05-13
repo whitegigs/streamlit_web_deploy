@@ -20,7 +20,7 @@ for i in range(1,30,10):
     re = requests.get(url)
     html = re.text
    
-st.text(html)
+    st.text(html)
 #     news = soup.select('.news_tit')
 
 #     for i in news:

@@ -2,13 +2,13 @@ import requests
 import pandas as pd
 # from bs4 import BeautifulSoup as bs
 import streamlit as st
-from datetime import datetime
+# from datetime import datetime
 
 
 
-now = datetime.now()
-today = now.strftime("%Y-%m-%d %H:%M:%S")
-st.text('오늘 날짜 '+ today)
+# now = datetime.now()
+# today = now.strftime("%Y-%m-%d %H:%M:%S")
+# st.text('오늘 날짜 '+ today)
 st.title('오늘의 최신 부산 뉴스')
 
 

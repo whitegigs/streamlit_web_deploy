@@ -18,9 +18,9 @@ st.write('부산관광 ', keyword)
 for i in range(1,11):
     url = f'https://search.naver.com/search.naver?where=news&sm=tab_jum&query=부산관광+{keyword}&start={i}' 
     re = requests.get(url)
-    html = re.text
+#     html = re.text
    
-    st.text(html)
+    st.text(re)
 #     news = soup.select('.news_tit')
 
 #     for i in news:

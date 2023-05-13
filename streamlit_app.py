@@ -5,7 +5,6 @@ from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup as bs
 import time
 import random
-from datetime import date
 import pandas as pd
 
 
